@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="login.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="login.css" />
+<title>Fan Login</title>
 </head>
 <body>
-<div class="box">
-    <h2>FAN LOGIN</h2>
-    <form action="login.php" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <p class="alt">Don't have an account? <a href="signup.html">Sign Up</a></p>
-        <button type="submit">LOGIN</button>
+<div class="wrap">
+  <div class="card">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" class="logo" aria-hidden="true"><path d="M12 2L2 7v7c0 5 4 9 10 9s10-4 10-9V7L12 2z" fill="currentColor"/></svg>
+      <h1>FAN LOGIN</h1>
+    </div>
+    <form id="loginForm" action="login.php" method="POST" autocomplete="off">
+      <div class="field">
+        <input id="username" name="username" type="text" placeholder="Username" required />
+      </div>
+      <div class="field">
+        <input id="password" name="password" type="password" placeholder="Password" required />
+      </div>
+      <div class="alt">Don't have an account? <a href="signup.html">Sign Up</a></div>
+      <button id="submitBtn" type="submit">LOGIN</button>
     </form>
+    <div id="notice" class="notice"></div>
+  </div>
+  <div class="bg-orb"></div>
 </div>
 <script src="login.js"></script>
 </body>
