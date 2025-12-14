@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CR7 Career</title>
-    <link rel="stylesheet" href="career.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CR7 Career</title>
+<link rel="stylesheet" href="career.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-    <h1>Cristiano Ronaldo – Career Journey</h1>
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
 
-    <div class="timeline">
-        <div class="card" onclick="showClub('sporting')">Sporting CP</div>
-        <div class="card" onclick="showClub('manutd')">Manchester United</div>
-        <div class="card" onclick="showClub('realmadrid')">Real Madrid</div>
-        <div class="card" onclick="showClub('juventus')">Juventus</div>
-        <div class="card" onclick="showClub('alnassr')">Al Nassr</div>
+<nav class="navbar">
+  <div class="logo">CR7</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="career.html" class="active">Career</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+
+<section class="career">
+  <h1>Career Journey</h1>
+  <p class="sub">From Madeira to Global Immortality</p>
+
+  <div class="timeline">
+    <div class="club">
+      <h2>Sporting CP</h2>
+      <span>2002 – 2003</span>
+      <p>Ronaldo began his professional career in Portugal, showcasing raw talent that shocked Europe.</p>
     </div>
 
-    <div id="details" class="details"></div>
-</div>
+    <div class="club">
+      <h2>Manchester United</h2>
+      <span>2003 – 2009 | 2021 – 2022</span>
+      <p>Developed into a superstar, winning Premier League titles and his first Ballon d'Or.</p>
+    </div>
 
-<script src="career.js"></script>
+    <div class="club">
+      <h2>Real Madrid</h2>
+      <span>2009 – 2018</span>
+      <p>Became the greatest scorer in club history, dominating world football with unmatched records.</p>
+    </div>
+
+    <div class="club">
+      <h2>Juventus</h2>
+      <span>2018 – 2021</span>
+      <p>Conquered Serie A, proving his dominance in yet another top European league.</p>
+    </div>
+
+    <div class="club">
+      <h2>Al Nassr</h2>
+      <span>2023 – Present</span>
+      <p>Leading football’s global expansion and inspiring a new generation in Saudi Arabia.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 CR7 Universe
+</footer>
+
 </body>
 </html>
